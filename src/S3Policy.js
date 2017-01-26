@@ -65,7 +65,7 @@ const getPolicyParams = (options) => {
     bucket: options.bucket,
     contentType: options.contentType,
     expires: "2034-01-01T00:00:00Z",
-    cacheControl: "max-age=2592000",
+    cacheControl: "max-age=2592000,public",
     credential:  options.accessKey + "/" + date.yymmdd + "/" + options.region + "/" + AWS_SERVICE_NAME + "/" + AWS_REQUEST_POLICY_VERSION,
     date: date,
     expiration: expiration,
